@@ -95,32 +95,6 @@
       opacity: 0.5;
     }
   </style>
-  <script type="text/mustache" id="days_template">
-    <ul id="days_list">
-      {{#days}}
-      <li>
-        {{#open}}
-        <a href="{{link}}">
-          <div class="day">{{day}}</div>
-          <div class="title">{{title}}</div>
-        </a>
-        {{/open}}
-        {{^open}}
-        <div title="Coming soon…" class="day soon">{{day}}</div>
-        {{/open}}
-      </li>
-      {{/days}}
-    </ul>
-  </script>
-  <script type="text/mustache" id="today_template">
-    <a href="{{link}}">
-      <div class="day">{{day}}</div>
-      <div class="description">{{description}}</div>
-    </a>
-    <p class="call_to_action">
-      <a href="{{link}}">{{callToAction}}</a>
-    </p>
-  </script>
 </head>
 <body>
   <div id="wrapper">
@@ -133,14 +107,33 @@
       </h1>
     </header>
     <div id="today">
-
+      {{#today}}
+      <a href="{{link}}">
+        <div class="day">{{day}}</div>
+        <div class="description">{{description}}</div>
+      </a>
+      <p class="call_to_action">
+        <a href="{{link}}">{{callToAction}}</a>
+      </p>
+      {{/today}}
     </div>
     <div id="days">
-
+      <ul id="days_list">
+        {{#days}}
+        <li>
+          {{#open}}
+          <a href="{{link}}">
+            <div class="day">{{day}}</div>
+            <div class="title">{{title}}</div>
+          </a>
+          {{/open}}
+          {{^open}}
+          <div title="Coming soon…" class="day soon">{{day}}</div>
+          {{/open}}
+        </li>
+        {{/days}}
+      </ul>
     </div>
   </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/mustache.js"></script>
-  <script type="text/javascript" src="assets/adventkalender.js"></script>
 </body>
 </html>
