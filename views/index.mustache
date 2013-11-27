@@ -13,10 +13,15 @@
       color: inherit;
     }
 
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
     #wrapper {
       max-width: 1000px;
       margin: 0 auto;
-      box-sizing: border-box;
     }
 
     .day {
@@ -27,7 +32,7 @@
     }
 
     #today, #days_list li, header {
-      margin: 23.5px;
+      margin: 25px;
     }
 
     #today, #days_list li {
@@ -75,8 +80,7 @@
     }
 
     #days_list li {
-      box-sizing: border-box;
-      display: inline-block;
+      float: left;
       width: 200px;
       height: 200px;
       overflow: hidden;
@@ -119,8 +123,7 @@
     </div>
     <div id="days">
       <ul id="days_list">
-        {{#days}}
-        <li>
+        {{#days}}<li>
           {{#open}}
           <a href="{{link}}">
             <div class="day">{{day}}</div>
@@ -130,8 +133,7 @@
           {{^open}}
           <div title="Coming soon…" class="day soon">{{day}}</div>
           {{/open}}
-        </li>
-        {{/days}}
+        </li>{{/days}}
       </ul>
     </div>
   </div>
