@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Codeship Adventkalender</title>
-  <meta content="Grab this free eBook for Software Developers. It will save you a lot of time and make you and your development team happy. Download Now!" name="description">
+  <meta content="Each day a new surprise. All about Software Development, Continuous Integration, Continuous Deployment and of course XMAS <3" name="description">
   <meta content="jkNiT3IkokTBHUog4wQgLCWb7bwaqT9OVkfC49-GaPc" name="google-site-verification">
   <meta content="Advent calendar by @codeship" name="subject">
-  <meta content="advent, xmas, codeship, continuous integration, continuous deployment, ebook, continuous delivery, testing, software testing, Workflow, Development Workflow, Development Workflows, Software, Software Development, Branching, Git, GitHub, Front-End Development, Back-End Development, Minimum viable feature, Shipping, agile, lean, Pull Request, Pull Requests, Code Review, codereview, Branching, issues, github flow, merge, merging, merge button, deployment, deployment pipeline, deployment pipelines, zero downtime, production, staging, Heroku, Codeship, migration, continuous delivery, zero downtime deployment" name="abstract">
-  <meta content="Advent calendar with topics all about Software Development, Continuous Integration and Deployemnt" name="topic">
-  <meta content="Each day a new surprise." name="summary">
+  <meta content="advent, xmas, christmas, codeship, continuous integration, continuous deployment, ebook, continuous delivery, testing, software testing, Workflow, Development Workflow, Development Workflows, Software, Software Development, Branching, Git, GitHub, Front-End Development, Back-End Development, Minimum viable feature, Shipping, agile, lean, Pull Request, Pull Requests, Code Review, codereview, Branching, issues, github flow, merge, merging, merge button, deployment, deployment pipeline, deployment pipelines, zero downtime, production, staging, Heroku, Codeship, migration, continuous delivery, zero downtime deployment" name="abstract">
+  <meta content="Codeship's advent calendar with topics all about Software Development, Continuous Integration and Deployment" name="topic">
+  <meta content="Each day a new surprise. All about Software Development, Continuous Integration, Continuous Deployment and of course XMAS <3" name="summary">
   <meta content="Clemens Helm" name="designer">
   <meta content="Codeship Inc." name="copyright">
   <meta content="resources@codeship.io" name="reply-to">
@@ -198,18 +198,13 @@
   </script>
 
   <script type="text/javascript">
-    if (mixpanel !== null && typeof mixpanel.get_property('user_type') === 'undefined') {
-      mixpanel.register({user_type:'guest'});
-    }
     mixpanel.register_once({ 'First Landed Page': document.URL });
     mixpanel.people.set_once({
       "First Seen": new Date().toUTCString(),
       "First Landed Page": document.URL,
-      "utm_medium": mixpanel.get_property("utm_medium"),
-      "utm_source": mixpanel.get_property("utm_source"),
-      "utm_campaign": mixpanel.get_property("utm_campaign"),
-      "utm_content": mixpanel.get_property("utm_content")
+      "Advent Calendar": 'viewed'
     });
+    mixpanel.track('advent calendar viewed');
   </script>
 </body>
 </html>
