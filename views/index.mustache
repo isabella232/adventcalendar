@@ -59,10 +59,15 @@
       color: inherit;
     }
 
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
     #wrapper {
       max-width: 1000px;
       margin: 0 auto;
-      box-sizing: border-box;
     }
 
     .day {
@@ -73,7 +78,7 @@
     }
 
     #today, #days_list li, header {
-      margin: 23.5px;
+      margin: 25px;
     }
 
     #today, #days_list li {
@@ -121,8 +126,7 @@
     }
 
     #days_list li {
-      box-sizing: border-box;
-      display: inline-block;
+      float: left;
       width: 200px;
       height: 200px;
       overflow: hidden;
@@ -142,32 +146,6 @@
       cursor: default;
     }
   </style>
-  <script type="text/mustache" id="days_template">
-    <ul id="days_list">
-      {{#days}}
-      <li>
-        {{#open}}
-        <a href="{{link}}">
-          <div class="day">{{day}}</div>
-          <div class="title">{{title}}</div>
-        </a>
-        {{/open}}
-        {{^open}}
-        <div title="Coming soon…" class="day soon">{{day}}</div>
-        {{/open}}
-      </li>
-      {{/days}}
-    </ul>
-  </script>
-  <script type="text/mustache" id="today_template">
-    <a href="{{link}}">
-      <div class="day">{{day}}</div>
-      <div class="description">{{description}}</div>
-    </a>
-    <p class="call_to_action">
-      <a href="{{link}}">{{callToAction}}</a>
-    </p>
-  </script>
 </head>
 <body>
   <div id="wrapper">
@@ -180,16 +158,32 @@
       </h1>
     </header>
     <div id="today">
-
+      {{#today}}
+      <a href="{{link}}">
+        <div class="day">{{day}}</div>
+        <div class="description">{{description}}</div>
+      </a>
+      <p class="call_to_action">
+        <a href="{{link}}">{{callToAction}}</a>
+      </p>
+      {{/today}}
     </div>
     <div id="days">
-
+      <ul id="days_list">
+        {{#days}}<li>
+          {{#open}}
+          <a href="{{link}}">
+            <div class="day">{{day}}</div>
+            <div class="title">{{title}}</div>
+          </a>
+          {{/open}}
+          {{^open}}
+          <div title="Coming soon…" class="day soon">{{day}}</div>
+          {{/open}}
+        </li>{{/days}}
+      </ul>
     </div>
   </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/mustache.js"></script>
-  <script type="text/javascript" src="assets/adventkalender.js"></script>
-
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-21192046-1']);
