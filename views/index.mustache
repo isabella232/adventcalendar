@@ -70,6 +70,23 @@
       margin: 0 auto;
     }
 
+    #wrapper header h1,
+    #wrapper header iframe {
+      display: inline-block;
+    }
+
+    .social-media {
+      position: absolute;
+      list-style-type: none;
+      top: 10px;
+      right: 10px;
+    }
+
+    .social-media li {
+      float: left;
+      width: 120px;
+    }
+
     .day {
       font-family: Georgia, serif;
       color: #980;
@@ -145,10 +162,32 @@
       opacity: 0.5;
       cursor: default;
     }
-    
+
   </style>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <ul class="social-media">
+    <li>
+      <div class="fb-like" data-href="http://xmas.codeship.io/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" data-width="150"></div>
+    </li>
+    <li>
+      <a class='twitter-share-button' data-text="Check out the @Codeship Xmas Countdown! Every day a new free goody! – " href='https://twitter.com/share'>Tweet</a>
+    </li>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+    <li>
+      <div class="g-plusone" data-size="medium" data-annotation="none" data-width="300"></div>
+    </li>
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  </ul>
   <div id="wrapper">
     <header>
       <h1>
@@ -157,10 +196,6 @@
         </a>
         The Codeship Xmas Countdown
       </h1>
-      <a class='twitter-share-button' data-text="Check out the @Codeship Xmas Countdown! Every day a new free goody! – " href='https://twitter.com/share'>Tweet</a>
-<script>
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-</script>
     </header>
     <div id="today">
       {{#today}}
@@ -210,6 +245,16 @@
       "Advent Calendar": 'viewed'
     });
     mixpanel.track('advent calendar viewed');
+  </script>
+
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=148544078502103";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
 </body>
 </html>
