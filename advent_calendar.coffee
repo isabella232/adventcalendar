@@ -2,7 +2,7 @@ class AdventCalendar
   days:
     1:
       title: "Get a free ebook"
-      description: """Get the free ebook "Efficiency in Development Workflows"."""
+      description: "Get the free ebook "Efficiency in Development Workflows"."
       callToAction: "Download ebook"
       link: "http://ebooks.codeship.io/efficiency-in-development-workflows-by-codeship"
     2:
@@ -28,42 +28,42 @@ class AdventCalendar
     6:
       title: "Continuous Deployment to OpsWorks"
       description: "Learn how to set up Continuous Deployment to Amazon OpsWorks"
-      callToAction: "Learn more"
+      callToAction: "Read our guide"
       link: "http://blog.codeship.io/2013/09/18/how-to-deploy-to-amazon-opsworks-using-codeship.html"
     7:
       title: "How we deploy our build servers"
       description: "Learn how we deploy of Immutable Build Servers continuosly at the Codeship."
-      callToAction: "Learn more"
+      callToAction: "Check it out"
       link: "http://blog.codeship.io/2013/09/12/the-codeship-workflow-part-5-continuous-deployment-of-immutable-build-servers.html"
     8:
       title: "Continuous Deployment at GrabCAD"
-      description: "Learn how GrabCAD uses Continuous Integration and Continuous Deployment."
-      callToAction: "Learn more"
+      description: "We interviewed Amos Benninga from GrabCAD. Learn how GrabCAD uses Continuous Integration and Continuous Deployment."
+      callToAction: "Read our interview"
       link: "http://blog.codeship.io/2013/09/04/continuous-integration-and-continuous-deployment-at-grabcad.html"
     9:
       title: "Testing JavaScript callbacks with QUnit"
-      description: "Learn how to test synchronous and asynchronous JavaScript callbacks with QUnit"
-      callToAction: "Learn more"
+      description: "Learn how to test synchronous and asynchronous JavaScript callbacks with QUnit in our video tutorial"
+      callToAction: "Watch now!"
       link: "http://blog.codeship.io/2013/09/03/testing-tuesday-21-testing-synchronous-and-asynchronous-javascript-callbacks-with-qunit.html"
     10:
       title: "Deployment Pipelines and Zero Downtime Deployment"
       description: "Learn how we deploy at the Codeship with Deployment Pipelines and Zero Downtime Deployment."
-      callToAction: "Learn more"
+      callToAction: "Learn more about our Workflow"
       link: "http://blog.codeship.io/2013/08/30/the-codeship-workflow-part-3-deployment-pipelines.html"
     11:
       title: "Free Code School course"
-      description: "Get a free Code School course sponsored by @Codeship."
+      description: "We are giving away a free course on Codeschool. Go and grab it!"
       callToAction: "Get free course"
       link: "http://blog.codeship.io/2013/08/28/get-a-free-codeschool-course-sponsored-by-codeship.html"
     12:
       title: "Pull Requests and Code Review"
       description: "Learn how we ensure code Quality at the Codeship with Pull Requests and Code Reviews."
-      callToAction: "Learn more"
+      callToAction: "Learn more about our Workflow"
       link: "http://blog.codeship.io/2013/08/22/the-codeship-workflow-part-2-pull-requests-and-code-review.html"
     13:
       title: "Testing node.js apps with Jasmine"
-      description: "Learn how to test node.js applications with Jasmine."
-      callToAction: "Learn more"
+      description: "Learn how to test node.js applications with Jasmine in this video tutorial."
+      callToAction: "Watch now!"
       link: "http://blog.codeship.io/2013/08/20/testing-tuesday-19-how-to-test-node-js-applications-with-jasmine.html"
     14:
       title: "Developing a new feature"
@@ -73,7 +73,7 @@ class AdventCalendar
     15:
       title: "Book recommendation"
       description: "No Christmas present yet? How about the book “Cucumber Recipes”?"
-      callToAction: "Read more"
+      callToAction: "Read our review"
       link: "http://blog.codeship.io/2013/08/01/book-review-cucumber-recipes.html"
     16: {}
     17: {}
