@@ -145,6 +145,11 @@
       opacity: 0.5;
       cursor: default;
     }
+    
+    .twitter-share-button {
+    float: right;
+    }
+    
   </style>
 </head>
 <body>
@@ -156,6 +161,10 @@
         </a>
         The Codeship Xmas Countdown
       </h1>
+      <a class='twitter-share-button' data-text="Check out the @Codeship Xmas Countdown! Every day a new free goody! – " href='https://twitter.com/share'>Tweet</a>
+<script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
     </header>
     <div id="today">
       {{#today}}
