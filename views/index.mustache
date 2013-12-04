@@ -52,11 +52,12 @@
   <style type="text/css">
     body {
       font-family: Arial, sans-serif;
+       background: url(assets/cream_dust.png) repeat;
     }
 
     a {
       text-decoration: none;
-      color: inherit;
+      color: #222;
     }
 
     * {
@@ -117,6 +118,12 @@
       margin-right: 0.7em;
       vertical-align: middle;
     }
+    
+    #today {
+      box-shadow: inset 0px 0px 20px #ccc;
+      -moz-box-shadow: inset 0px 0px 20px #ccc;
+      -webkit-box-shadow: inset 0px 0px 20px #ccc;
+    }
 
     #today a {
       color: inherit;
@@ -135,6 +142,10 @@
       background: #DD7732;
       color: white;
       padding: 1%;
+      display: inline-block;
+      border-radius: 6px;
+      -webkit-border-radius: 6px; 
+      -moz-border-radius: 6px; 
     }
 
     #days_list {
@@ -147,6 +158,9 @@
       width: 200px;
       height: 200px;
       overflow: hidden;
+      box-shadow: inset 0px 0px 20px #ccc;
+      -moz-box-shadow: inset 0px 0px 20px #ccc;
+      -webkit-box-shadow: inset 0px 0px 20px #ccc;
     }
 
     #days_list .day {
