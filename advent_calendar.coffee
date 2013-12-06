@@ -2,7 +2,7 @@ class AdventCalendar
   days:
     1:
       title: "Get a free ebook"
-      description: "Get the free ebook "Efficiency in Development Workflows"."
+      description: "Get the free ebook 'Efficiency in Development Workflows'."
       callToAction: "Better Software Development Workflows"
       link: "http://ebooks.codeship.io/efficiency-in-development-workflows-by-codeship"
     2:
