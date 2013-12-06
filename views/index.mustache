@@ -38,7 +38,7 @@
   <meta content="@codeship" name="twitter:creator">
   <meta content="220165520" name="twitter:creator:id">
   <!-- / google plus -->
-  <meta content="The Codeship Xmas Countdown itemprop="name">
+  <meta content="The Codeship Xmas Countdown" itemprop="name">
   <meta content="We open one present a day. Come back every day to learn about Software Development, Continuous Integration and Continuous Deployment. Check it out!" itemprop="description">
   <meta content="http://xmas.codeship.io/assets/560x292-OG_Xmas_Countdown.jpg" itemprop="image">
 
@@ -74,6 +74,19 @@
     #wrapper header h1,
     #wrapper header iframe {
       display: inline-block;
+    }
+
+    #wrapper header h1 a {
+      font: #{0/0} a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0;
+      display: block;
+      background: url(assets/codeship_santa_claus.png) no-repeat center;
+      width: 250px;
+      height: 83px;
+      overflow: hidden;
     }
 
     .social-media {
@@ -216,9 +229,7 @@
   <div id="wrapper">
     <header>
       <h1>
-        <a href="https://www.codeship.io">
-          <img src="assets/codeship_santa_claus.png" alt="Codeship Christmas Logo">
-        </a>
+        <a href="https://www.codeship.io">Try Codeship for Continuous Integration and Continuous Deployment</a>
         The Codeship Xmas Countdown
       </h1>
     </header>
